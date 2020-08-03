@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Is the average whole</title>
+</head>
+<body>
+  <script>
+    function isTheAverageWhole(numbersArray){
+      var avg = null;
+      for(var i = 0; i < numbersArray.length; i++){
+        avg += numbersArray[i]
+      }
+       avg = avg / numbersArray.length;
+
+    var result = parseInt(avg);
+
+
+    if( avg !== parseInt(avg)){
+      return false
+    } else {
+      return true
+    }
+
+    }
+    console.log(isTheAverageWhole([1, 3, 4, 4]));
+    console.log(isTheAverageWhole([3, 4]));
+    console.log(isTheAverageWhole([5, 5, 5]));
+
+    // if(avg ){
+    //   return true;
+    // } else {
+    //   return false;
+    // }
+    isTheAverageWhole([1, 3, 4, 4]) // -> true
+      isTheAverageWhole([3, 4]) // -> false
+      isTheAverageWhole([5, 5, 5]) // -> true
+  </script>
+</body>
+</html>
